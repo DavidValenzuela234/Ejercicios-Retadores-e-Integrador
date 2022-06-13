@@ -1,0 +1,13 @@
+# Ejercicio Retador 1 Funciones y operaciones básicas en Python
+
+Superficie_Km_Sinaloa = 57365
+Localizacion = "Noroeste"
+Tipos_Climas = "Cálido", "Subhúmedo", "Seco" "Semiseco"
+Temperatura_Media_Anual = 25.45
+Precipitación_Anual = 7001
+Cantidad_Mujeres = 1532128
+Cantidad_Hombres = 1494815
+Porcentaje_Culiacan = 33.15
+Porcentaje_Mazatlan = 16.57
+Cantidad_Total = Cantidad_Mujeres + Cantidad_Hombres
+Porcentaje_Total = Porcentaje_Culiacan + Porcentaje_Mazatlan
