@@ -1,0 +1,74 @@
+# Ejercicio Integrador 1
+
+Productos = [["1","Maiz",285.55],["2","Pepino",334.72],["3","Tomate verde",129]]
+Costo_Envio = 1500
+descuento = False
+
+
+venta_productos = [[2, 122], [1, 89],[1, 22], [3, 48], [1, 75], [3, 322], [2, 95], [1, 148], [1, 83], [3, 100]]
+
+totalVentas = [[1,0],[2,0],[3,0]]
+
+#Pedir valores
+Cajas_Vender = int (input("Número de cajas a vender: "))
+ID = int (input("ID del producto: "))
+
+for i in range(len(venta_productos)):
+    if ID == 1:
+        totalVentas[0][1] += venta_productos[i][1]
+        Costo_Total = Cajas_Vender * Productos[0][2]
+
+    elif ID == 2:
+            totalVentas[1][1] += venta_productos[i][1]
+            Costo_Total = Cajas_Vender * Productos[1][2]
+    elif ID == 3:
+            totalVentas[2][1] += venta_productos[i][1]
+            Costo_Total = Cajas_Vender * Productos[2][2]
+
+
+
+
+if(ID == 1 and totalVentas[0][1]<1500):
+    print ("El producto es: " + Productos[0][1])
+    print ("El precio por caja es: ", + Productos[0][2])
+    descuento = True
+elif(ID == 1 and totalVentas[0][1]>=1500):
+    print ("El producto es: " + Productos[0][1])
+    print ("El precio por caja es: ", + Productos[0][2])
+    descuento = False
+
+
+elif(ID == 2 and totalVentas[1][1]<1500):
+    print ("El producto es: " + Productos[1][1])
+    print ("El precio por caja es: ", + Productos[1][2])
+    descuento = True
+elif(ID == 2 and totalVentas[1][1]>=1500):
+    print ("El producto es: " + Productos[1][1])
+    print ("El precio por caja es: ", + Productos[1][2])
+    descuento = False
+
+
+elif(ID == 3 and totalVentas[2][1]<1500):
+    print ("El producto es: " + Productos[2][1])
+    print ("El precio por caja es: ", + Productos[2][2])
+    descuento = True
+elif(ID == 3 and totalVentas[2][1]>=1500):
+    print ("El producto es: " + Productos[2][1])
+    print ("El precio por caja es: ", + Productos[2][2])
+    descuento = False
+
+
+
+if(Cajas_Vender <= 100):
+    Costo_Final = Costo_Total + Costo_Envio 
+    print("Aplica costo de envio")
+else:
+    print("No aplica costo de envio")
+
+
+#Imprimir en pantalla
+if descuento:
+    totalpagar = (Costo_Total*0.20)* 4
+print("Aplica descuento del 20%: " + str(descuento))
+print ("El costo total a pagar es: ", + totalpagar)
+print(totalVentas)
