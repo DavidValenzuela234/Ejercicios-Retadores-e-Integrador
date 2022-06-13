@@ -1,0 +1,27 @@
+# Ejercicio Retador 2 Índices y listas
+
+Lista_Municipio = []
+Lista_Habitantes = []
+
+Municipio = input("Ingresa el nombre del municio: ")
+Lista_Municipio.append(Municipio)
+Habitantes = int(input("Ingresa el número de habitantes: "))
+Lista_Habitantes.append(Habitantes)
+
+Municipio = input("Ingresa el nombre del municio: ")
+Lista_Municipio.append(Municipio)
+Habitantes = int(input("Ingresa el número de habitantes: "))
+Lista_Habitantes.append(Habitantes)
+
+Municipio = input("Ingresa el nombre del municio: ")
+Lista_Municipio.append(Municipio)
+Habitantes = int(input("Ingresa el número de habitantes: "))
+Lista_Habitantes.append(Habitantes)
+
+
+Habitantes_Totales = sum(Lista_Habitantes) # Suma los Numeros dentro de la lista
+Promedio_Habitantes = Habitantes_Totales / 3
+
+print("El total de habitantes es: ", + Habitantes_Totales)
+print("El promedio de los habitantes es: ", + Promedio_Habitantes)
+
