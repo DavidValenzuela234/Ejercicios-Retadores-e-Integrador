@@ -1,0 +1,26 @@
+# Ejercicio Retador 3 Manejo de operadores
+
+Capacidad_Maxima = 3254
+Peso_Cemento = 40
+Peso_Yeso = 30
+Capacidad_Minima = Capacidad_Maxima / 2
+Realiza_Envio = True
+
+Numero_Costales_Cemento = int (input("Número de costales de cemento (kg): "))
+Numero_Costales_Yeso = int (input("Número de costales de yeso (kg): "))
+
+Peso_Total_Cementos = Numero_Costales_Cemento * Peso_Cemento
+Peso_Total_Yeso = Numero_Costales_Yeso * Peso_Yeso
+
+Peso_Total = Peso_Total_Yeso +  Peso_Total_Cementos
+
+print("El peso total en kg es: ", + Peso_Total)
+
+if(Peso_Total < Capacidad_Minima or Peso_Total > Capacidad_Maxima):
+    Realiza_Envio = False
+    print("¿Se puede realizar el envío?: ", + Realiza_Envio)
+else:
+    print("¿Se puede realizar el envío?: ", + Realiza_Envio)
+
+
+
