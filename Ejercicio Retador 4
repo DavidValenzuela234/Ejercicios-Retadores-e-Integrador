@@ -1,0 +1,31 @@
+# Ejercicio Retador 4 Sentencias condicionales: if, if-else, if-elif-else
+
+
+
+ID_Productos = [1, 2, 3]
+Tipo_Producto = ["Maiz grano", "Pepino", "Tomate verde"]
+Costo_Por_Caja = [285.55, 334.72, 129.00]
+Costo_Envio = 1500
+
+Cajas_Vender = int (input("Número de cajas a vender: "))
+ID = int (input("ID del producto: "))
+
+if(ID == 1):
+    print ("El producto es: " + Tipo_Producto[0])
+    print ("El precio por caja es: ", + Costo_Por_Caja[0])
+    Costo_Total = Cajas_Vender * Costo_Por_Caja[0]
+elif(ID == 2):
+    print ("El producto es: " + Tipo_Producto[1])
+    print ("El precio por caja es: ", + Costo_Por_Caja[1])
+    Costo_Total = Cajas_Vender * Costo_Por_Caja[1]
+elif(ID == 3):
+    print ("El producto es: " + Tipo_Producto[2])
+    print ("El precio por caja es: ", + Costo_Por_Caja[2])
+    Costo_Total = Cajas_Vender * Costo_Por_Caja[2]
+
+if(Cajas_Vender <= 100):
+    Costo_Final = Costo_Total + Costo_Envio 
+else:
+    Costo_Final = Costo_Total
+
+print ("El costo total a pagar es: ", + Costo_Final)
